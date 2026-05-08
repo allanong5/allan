@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOGOKIDS 官方网站</title>
+    <title>GOGOKIDS 官方网站 - 弹头小子</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0b1120; color: white; font-family: sans-serif; }
-        .red-glow { border: 2px solid #ef4444; box-shadow: 0 0 20px rgba(239, 68, 68, 0.4); }
+        /* 核心配色：深黑背景，热血战斗红 */
+        body { background-color: #0d1117; color: white; font-family: 'Inter', sans-serif; }
+        .red-glow { border: 2px solid #ef4444; box-shadow: 0 0 25px rgba(239, 68, 68, 0.5); }
+        .text-glow { text-shadow: 0 0 10px rgba(239, 68, 68, 0.7); }
     </style>
 </head>
 <body>
-    <nav class="p-6 border-b border-gray-800 flex justify-between items-center bg-slate-900">
+    <nav class="p-5 border-b border-gray-800 flex justify-between items-center bg-[#161b22]">
         <div class="flex items-center gap-4">
-            <img src="https://images2.imgbox.com/3e/2d/7Uj1fFvE_o.png" alt="Avatar" class="w-12 h-12 rounded-full border-2 border-red-500">
-            <span class="text-2xl font-black italic text-red-500 tracking-tighter uppercase">Gogokids</span>
+            <img src="/avatar.png" alt="GOGOKIDS Logo" class="w-14 h-14 rounded-full border-2 border-red-500 bg-black p-1 shadow-lg">
+            <span class="text-3xl font-black italic text-red-500 tracking-tighter uppercase text-glow">Gogokids</span>
+        </div>
+        <div class="flex gap-3">
+            <button class="bg-red-600 px-6 py-2 rounded-full text-sm font-bold hover:bg-red-700 transition">官方商城</button>
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto py-16 px-6 text-center">
-        <h1 class="text-6xl font-black italic mb-4 uppercase">弹头小子 <span class="text-red-500">Bullet Boy</span></h1>
-        <p class="text-gray-400 text-lg mb-10">14岁机甲少年与他的机械犬 Hero</p>
+    <main class="max-w-6xl mx-auto py-20 px-6 text-center">
+        <h1 class="text-7xl font-black italic mb-4 uppercase tracking-tight">弹头小子 <span class="text-red-500 text-glow">Bullet Boy</span></h1>
+        <p class="text-gray-400 text-xl mb-12 max-w-2xl mx-auto">在废土之上，14岁的天才机甲少年弹头，戴上标志性的红色头盔，与他最忠诚的机械犬伙伴 Hero，开启了一场关于创造与勇气的热血冒险。</p>
         
-        <div class="mb-16">
-            <img src="https://images2.imgbox.com/5c/4b/T8oY2r6l_o.jpg" alt="Character View" class="w-full max-w-4xl mx-auto rounded-3xl red-glow shadow-2xl">
+        <div class="mb-20">
+            <img src="/character_views.png" alt="Bullet Boy Character Views" class="w-full max-w-4xl mx-auto rounded-3xl red-glow shadow-2xl transition-transform hover:scale-[1.01]">
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 text-left">
-            <div class="bg-slate-900 p-8 rounded-2xl border border-gray-800 hover:border-red-500 transition">
-                <h2 class="text-2xl font-bold text-red-500 mb-3">弹头 (Bullet Boy)</h2>
-                <p class="text-gray-400">热血少年机甲师，头戴红色头盔，胸口有标志性口袋设计。</p>
+        <div class="grid md:grid-cols-2 gap-10 text-left">
+            <div class="bg-[#161b22] p-10 rounded-3xl border border-gray-800 hover:border-red-500 transition-all shadow-xl group">
+                <div class="w-12 h-1 bg-red-500 mb-6 group-hover:w-full transition-all"></div>
+                <h2 class="text-3xl font-bold text-red-500 mb-4 text-glow">弹头 (Bullet Boy)</h2>
+                <p class="text-gray-300 text-lg leading-relaxed">热血机甲少年。不仅拥有精湛的机械改装天赋，更有直面未知的勇气。他的红色头盔不仅是防护，更是梦想的起点。</p>
             </div>
-            <div class="bg-slate-900 p-8 rounded-2xl border border-gray-800 hover:border-red-500 transition">
-                <h2 class="text-2xl font-bold text-red-500 mb-3">Hero</h2>
-                <p class="text-gray-400">高智能机械犬，拥有带红球的直尾巴，是最可靠的伙伴。</p>
+            <div class="bg-[#161b22] p-10 rounded-3xl border border-gray-800 hover:border-red-500 transition-all shadow-xl group">
+                <div class="w-12 h-1 bg-red-500 mb-6 group-hover:w-full transition-all"></div>
+                <h2 class="text-3xl font-bold text-red-500 mb-4 text-glow">机械犬 Hero</h2>
+                <p class="text-gray-300 text-lg leading-relaxed">弹头亲手制造的高智能机械伙伴。它拥有灵敏的传感器和带红球的标志性直尾巴，时刻准备着为伙伴化解危机。</p>
             </div>
+        </div>
+    </main>
+
+    <footer class="py-12 text-center text-gray-700 border-t border-gray-900 mt-20 bg-[#0d1117]">
+        <p class="text-sm">© 2026 GOGOKIDS IP Project. All characters and designs are original.</p>
+    </footer>
+</body>
+</html>            </div>
         </div>
     </main>
 
